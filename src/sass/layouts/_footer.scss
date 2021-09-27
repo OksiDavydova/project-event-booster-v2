@@ -1,0 +1,113 @@
+.footer {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  line-height: 30px;
+}
+
+.number-of-page {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-color: var(--pink-color);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.number-of-page:hover {
+  cursor: pointer;
+}
+
+.number-of-page:hover,
+.number-of-page:focus {
+  color: var(--pink-color);
+  border: 1px solid #dc56c5;
+  border-radius: 10px 0px;
+}
+
+.number-of-page_active {
+  border: 1px solid #dc56c5;
+  border-radius: 10px 0px;
+}
+
+.copyright-text {
+  font-size: 14px;
+  color: #939393;
+  position: absolute;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.copyright-text--part {
+  display: inline-block;
+}
+.text-btn {
+  color: #939393;
+}
+.copyright-btn {
+  display: inline;
+  padding: 0;
+}
+
+.heart {
+  color: var(--red-color);
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 80px;
+  right: 40px;
+
+  z-index: 99;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  // line-height: 30px;
+  background-color: var(--grey-color);
+  color: var(--black-color);
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px 0px;
+  outline: transparent;
+  display: none;
+  transition: background-color var(--animation), color var(--animation),
+    border-color var(--animation);
+
+  &:hover {
+    color: var(--red-color);
+    background-color: var(--black-color);
+    border-color: var(--red-color);
+  }
+}
+
+.back-to-top-show {
+  display: block;
+}
+
+.arrow-up {
+  position: absolute;
+  bottom: 6px;
+  right: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  color: inherit;
+  text-shadow: var(--pink-color) 2px 0 10px;
+}
